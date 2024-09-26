@@ -1,0 +1,122 @@
+/* footer */
+footer {
+  background-color: #f9f9f9;
+  ;
+  padding: 24px 0;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-flex .footer-social,
+.footer-flex .footer-newsletter {
+  flex: 1;
+  /* Each section takes up equal width */
+}
+
+/* footer-social */
+.footer-flex .footer-social {
+  text-align: center;
+
+  align-self: self-end;
+}
+
+footer .icons {
+  padding-bottom: 12px;
+}
+
+footer .icons i {
+  transition: var(--main-transition);
+  color: var(--dark2);
+  font-size: 20px;
+  margin: 0px 10px;
+}
+
+footer .icons i:hover {
+  color: rgba(0, 0, 0, 0.4);
+  transform: scale(1.2);
+}
+
+/* footer-newsletter */
+.footer-newsletter h3 {
+  font-size: 1.5rem;
+}
+
+.footer-newsletter p {
+  padding-top: 8px;
+  font-size: 1rem;
+}
+
+.footer-flex .footer-newsletter {
+  text-align: center;
+}
+
+.footer-newsletter form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-newsletter .email-container {
+  background-color: var(--mainColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.footer-newsletter .email-container input {
+  flex: 1;
+  font-size: 1.1rem;
+  outline: 0;
+  border: none;
+  width: 100%;
+}
+
+.footer-newsletter .email-container i {
+  color: var(--dark2);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.footer-newsletter button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 50%;
+  background-color: var(--dark2);
+  color: var(--mainColor);
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: var(--main-transition);
+}
+
+.footer-newsletter button:hover {
+  background-color: var(--dark);
+}
+
+@media (max-width: 991px) {
+  .footer-flex {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .footer-flex .footer-newsletter {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-flex .footer-social {
+    order: 2;
+    align-self: center;
+  }
+}

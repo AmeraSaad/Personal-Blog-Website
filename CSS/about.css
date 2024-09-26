@@ -1,0 +1,50 @@
+/* About Section */
+.about h2 {
+  color: var(--dark);
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.about .about-content {
+  padding: 48px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.about .about-content img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about .about-text {
+  flex: 1;
+  /* The text will take the remaining space */
+}
+
+.about .about-content .title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.about .about-content p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+@media (max-width: 991px) {
+  .about .about-content {
+    flex-direction: column;
+  }
+
+  .about .about-content img {
+    max-width: 100%;
+    margin-right: 0;
+
+  }
+}
